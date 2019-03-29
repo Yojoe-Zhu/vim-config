@@ -12,6 +12,9 @@ set laststatus=2
 set matchpairs+=<:>
 set encoding=utf-8
 set tabstop=4
+set re=1
+set ttyfast
+set lazyredraw
 
 autocmd WinLeave * set nocursorline nocursorcolumn
 autocmd WinEnter * set cursorline cursorcolumn
