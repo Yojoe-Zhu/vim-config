@@ -56,12 +56,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'guxingke/plantuml-vim'
+" Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'Yggdroot/LeaderF'
+" Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -125,13 +130,22 @@ autocmd BufNewFile,BufRead *.py
 \ set fileformat=unix
 
 " C
-autocmd BufNewFile,BufRead *.c
+autocmd BufNewFile,BufRead *.c,*.h,*.cpp,*.hpp
 \ set tabstop=8 |
 \ set softtabstop=8 |
 \ set shiftwidth=8 |
 \ set textwidth=79 |
-\ set expandtab |
+\ set noexpandtab |
 \ set autoindent |
 \ set fileformat=unix
 
+" java
+autocmd BufNewFile,BufRead *.java
+\ set tabstop=4 |
+\ set softtabstop=4 |
+\ set shiftwidth=4 |
+\ set textwidth=79 |
+\ set expandtab |
+\ set autoindent |
+\ set fileformat=unix
 
